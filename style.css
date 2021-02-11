@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(95, 60, 221);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(145, 91, 245);
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(95, 60, 221);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+.search::placeholder {
+  color: #fff;
+}
+
+.search:focus {
+  outline: none;
+  background-color: rgb(95, 60, 221);
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: rgb(145, 91, 245);
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 255px;
+  margin: 2rem;
+  position: relative;
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1rem 0.75rem;
+  color: #eee;
+  letter-spacing: 0.4px;
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  padding: 0.25rem 0rem;
+}
+
+.movie-info span {
+  background-color: rgb(95, 60, 221);
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.movie-info span.green {
+  color: rgb(73, 253, 28);
+}
+.movie-info span.orange {
+  color: orange;
+}
+.movie-info span.red {
+  color: rgb(231, 22, 22);
+}
+
+.overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  overflow: auto;
+  bottom: 0;
+  font-size: 0.9rem;
+  color: #333;
+  opacity: 85%;
+  background-color: #fff;
+  padding: 2rem;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.overview h4 {
+  margin-top: 0;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}

@@ -1,0 +1,4 @@
+- Show movies by popularity
+- Search for movies
+- See the ratings of the movies
+- Read the overview by hovering
